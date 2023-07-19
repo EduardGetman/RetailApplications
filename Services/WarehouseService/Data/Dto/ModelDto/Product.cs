@@ -1,11 +1,11 @@
 ﻿using WarehouseService.Common.Enums;
 
-namespace WarehouseService.Data.Domain;
+namespace WarehouseService.Data.Dto.ModelDto;
 
 /// <summary>
 /// Сущность "Товар"
 /// </summary>
-public class Product : DomainBase
+public class Product : ModelDtoBase
 {
     public string Name { get; set; }
     public string Code { get; set; }

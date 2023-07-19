@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using WarehouseService.Common.Enums;
 using WarehouseService.Data.Domain;
 
 namespace WarehouseService.Infrastructure.Database.Configurations;
