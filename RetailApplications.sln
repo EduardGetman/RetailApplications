@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseService", "Services\WarehouseService\WarehouseService.csproj", "{82725E4B-8535-4B3D-B5DB-C1A2235020E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseWebService", "Services\WarehouseWebService\WarehouseWebService.csproj", "{82725E4B-8535-4B3D-B5DB-C1A2235020E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
