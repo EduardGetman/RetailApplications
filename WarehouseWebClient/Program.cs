@@ -1,6 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
-app.MapGet("/", () => "Веб клиент склада");
+app.MapControllerRoute(
+    name: "default", 
+    pattern: "{controller=Home}/{action=Index}");
 
 app.Run();
