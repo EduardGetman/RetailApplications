@@ -1,0 +1,17 @@
+﻿@{
+    var links = new Dictionary<string, string>()
+    {
+        { "Товары", "/Product/" },
+        { "Остаток", "/Product/Remains/" }
+    };
+}
+<div id="leftSidebar">
+    <nav>
+        @foreach (var link in links)
+        {
+            <div>
+                <a href="@link.Value">@link.Key</a>
+            </div>
+        }
+    </nav>
+</div>

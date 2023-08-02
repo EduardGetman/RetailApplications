@@ -1,0 +1,30 @@
+﻿#footer {
+    padding: 10px;
+    width: 100%;
+    border-top: 3px solid gray;
+    text-align: center;
+    margin: 0;
+}
+
+#footer .ul-nav a {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+#footer .ul-nav a:hover {
+    color: #777;
+}
+
+#footer .ul-nav li {
+    padding-right: 5px;
+    border-right: 2px solid gray;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+#footer .ul-nav li:last-child {
+    border-right: none;
+}

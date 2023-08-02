@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>@ViewBag.Title</title>
+    @await RenderSectionAsync("Styles", required: false)
+     <link type="text/css" rel="stylesheet" href="~/css/common.css" />
+     <link type="text/css" rel="stylesheet" href="~/css/content.css" />
+     <link type="text/css" rel="stylesheet" href="~/css/fother.css" />
+     <link type="text/css" rel="stylesheet" href="~/css/header.css" />
+     <link type="text/css" rel="stylesheet" href="~/css/leftSidebar.css" />
+    <link />
+</head>
+<body>
+<header id="header">
+    <div id="logo">
+        <a href="/">
+            <img alt="Логотип" src="~/images/warehouse_logo.png"/>
+        </a>
+    </div>
+    <nav>
+        <ul class="ul-nav">
+            <li class="li-nav-item">
+                <a href="/Warehouse/">Склады</a>
+            </li>
+            <li class="li-nav-item">
+                <a href="/Product/">Товары</a>
+            </li>
+            <li class="li-nav-item">
+                <a href="#">Поставки</a>
+            </li>
+            <li class="li-nav-item">
+
+                <a href="#">Отгрузки</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="wrapper">
+     @(await RenderSectionAsync("LeftSidebar", false))
+
+    <div id="content">
+        @RenderBody()
+    </div>
+</div>
+<footer id="footer">
+    <div>
+        <ul class="ul-nav">
+            <li class="li-nav-item">
+                <a href="#">Сайт разработчика</a>
+            </li>
+            <li class="li-nav-item">
+                <a href="#">Техническая подержка</a>
+            </li>
+            <li class="li-nav-item">
+                <a href="#">Пользовательская документация</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p><b>Почта для связи</b>: developer.mail@gmail.com</p>
+    </div>
+</footer>
+</body>
+</html>
