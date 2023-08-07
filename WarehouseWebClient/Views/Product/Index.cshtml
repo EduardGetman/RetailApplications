@@ -1,5 +1,32 @@
-﻿@section LeftSidebar {
-     @{ await Html.RenderPartialAsync("LeftSidebar");}
+﻿@model WarehouseWebClient.Models.ProductsModel
+
+@section LeftSidebar {
+    @{ await Html.RenderPartialAsync("LeftSidebar"); }
 }
 
+
 <h2>Товары</h2>
+<table class="content-table">
+    <thead>
+    <tr class="table-head-row">
+        <th class="table-head-cell">№</th>
+        <th class="table-head-cell">Код</th>
+        <th class="table-head-cell">Адрес</th>
+        <th class="table-head-cell">Остаток</th>
+        <th class="table-head-cell">Единица измерения</th>
+    </tr>
+    </thead>
+    <tbody>
+    @{ var index = Model.FirstEntityNumber; }
+    @foreach (var product in Model.Products)
+    {
+        <tr class="table-row">
+            <td class="table-row-cell">@(index++)</td>
+            <td class="table-row-cell">@product.Code</td>
+            <td class="table-row-cell">@product.Name</td>
+            <td class="table-row-cell">@product.Remains</td>
+            <td class="table-row-cell">@product.MeasurementUnits</td>
+        </tr>
+    }
+    </tbody>
+</table>

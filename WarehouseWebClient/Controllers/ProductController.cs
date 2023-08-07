@@ -1,12 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WarehouseWebClient.Interfaces;
 
 namespace WarehouseWebClient.Controllers;
 
 public class ProductController : Controller
 {
+    private readonly IProductService _productService;
+
+    public ProductController(IProductService productService)
+    {
+        _productService = productService;
+    }
+
     public IActionResult Index()
     {
-        return View();
+        var model = _productService.GetProductsModel(0, 3);
+        return View(model);
     }
     public IActionResult Remains()
     {

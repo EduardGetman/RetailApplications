@@ -5,3 +5,28 @@
     padding: 10px;
     border-left: 3px gray solid;
 }
+.content-table{
+    border: 2px solid #aaa;   
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table-head-row{
+    border: 2px solid #aaa;
+    height: 30px;
+}
+.table-row{
+    height: 30px;
+}
+.table-row-cell{
+    border: 1px solid #aaa;
+    border-right: 2px solid #aaa;
+    margin: 0;
+    padding: 5px;
+}
+.table-head-cell{
+    border: 1px solid #aaa;
+    border-right: 2px solid #aaa;
+    margin: 0;
+    padding: 5px;
+    
+}
