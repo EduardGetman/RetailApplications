@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using WarehouseWebService.Data.Dto.ModelDto;
-using WarehouseWebService.Infrastructure;
+using Dto.ModelDto;
 using WarehouseWebService.Infrastructure.Database;
 using WarehouseWebService.Interfaces;
 

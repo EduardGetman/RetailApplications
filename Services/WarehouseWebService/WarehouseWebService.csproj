@@ -29,4 +29,8 @@
         <Folder Include="Infrastructure\Database\Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Dto\Dto.csproj" />
+    </ItemGroup>
+
 </Project>

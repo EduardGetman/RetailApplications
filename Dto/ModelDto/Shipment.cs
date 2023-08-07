@@ -1,4 +1,4 @@
-﻿namespace WarehouseWebService.Data.Dto.ModelDto;
+﻿namespace Dto.ModelDto;
 
 /// <summary>
 /// Сущность "Отгрузка"

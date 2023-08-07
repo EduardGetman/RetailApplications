@@ -1,4 +1,4 @@
-﻿namespace WarehouseWebService.Data.Dto.ModelDto;
+﻿namespace Dto.ModelDto;
 
 /// <summary>
 /// Сущность "Поставщик"
@@ -7,5 +7,4 @@ public class Supplier : ModelDtoBase
 {
     public string Code { get; set; }
     public string Name { get; set; }
-    public ICollection<Delivery> Deliveries { get; set; }
 }
